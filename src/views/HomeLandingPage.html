@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Node.Js API</title>
+  </head>
+  <body>
+    <h1>Base of a <a href="https://nodejs.org">Node.Js</a> API application made with <a href="https://www.typescriptlang.org/">Typescript</a></h1>
+    <h2>API Routes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Verb</th>
+          <th>Description</th>
+          <th>Required body</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/</td>
+          <td>GET</td>
+          <td>Landing page with route description</td>
+          <td></td>
+          <td></td>
+          </tr>
+        <tr>
+          <td>/api/sessions</td>
+          <td>PUT</td>
+          <td>Create new user</td>
+          <td><code>{ &quot;name&quot;: &quot;User Name&quot;, &quot;email&quot;: &quot;user@email.com&quot;, &quot;password&quot;: &quot;user-password&quot; }</code></td>
+          <td>Serialized created user</td>
+        </tr>
+        <tr>
+          <td>/api/sessions</td>
+          <td>POST</td>
+          <td>Login user</td>
+          <td><code>{ &quot;email&quot;: &quot;user@email.com&quot;, &quot;password&quot;: &quot;user-password&quot; }</code></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/api/sessions</td>
+          <td>DELETE</td>
+          <td>Logout user</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

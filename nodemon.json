@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts",
+  "execMap": {
+    "ts": "ts-node -T -r tsconfig-paths/register -r ./scripts/setupEnv.ts"
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

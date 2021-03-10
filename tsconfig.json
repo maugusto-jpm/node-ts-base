@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "build",
+    "baseUrl": "./",
+    "rootDir": "./",
+    "incremental": true,
+    "paths": {
+      "Src/*": [
+        "src/*"
+      ],
+      "Models/*": [
+        "src/models/*"
+      ],
+      "Controllers/*": [
+        "src/controllers/*"
+      ],
+      "Middlewares/*": [
+        "src/middlewares/*"
+      ],
+      "Providers/*": [
+        "./src/providers/*"
+      ],
+      "UseCases/*": [
+        "./src/useCases/*"
+      ],
+      "Root/*": [
+        "./*"
+      ]
+    },
+    "typeRoots": [
+      "src/types.d.ts",
+      "node_modules/@types"
+    ]
+  }
+}
